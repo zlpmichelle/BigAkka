@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bea9fdf1-e297-4eb3-9e33-2396f01f569d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/Michelle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BigAkka.iml" afterPath="$PROJECT_DIR$/BigAkka.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/Client.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/ClientActor.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/ClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/FileReadActor.java" afterPath="$PROJECT_DIR$/src/hadoopwc/FileReadActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/FileReadActor.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/client/FileReadActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helloworld/LocalClient.java" afterPath="$PROJECT_DIR$/src/helloworld/LocalClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modifywordcount/LocalClient.java" afterPath="$PROJECT_DIR$/src/modifywordcount/LocalClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helloworld/LocalClientActor.java" afterPath="$PROJECT_DIR$/src/helloworld/LocalClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modifywordcount/LocalClientActor.java" afterPath="$PROJECT_DIR$/src/modifywordcount/LocalClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/MapActor.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/MapActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/ReduceActor.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/ReduceActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helloworld/RemoteServer.java" afterPath="$PROJECT_DIR$/src/helloworld/RemoteServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modifywordcount/RemoteServer.java" afterPath="$PROJECT_DIR$/src/modifywordcount/RemoteServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helloworld/RemoteServerActor.java" afterPath="$PROJECT_DIR$/src/helloworld/RemoteServerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modifywordcount/RemoteServerActor.java" afterPath="$PROJECT_DIR$/src/modifywordcount/RemoteServerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/WCMapReduceActor.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/WCMapReduceActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/WCMapReduceServer.java" afterPath="$PROJECT_DIR$/src/org/akka/example/wordcount/server/WCMapReduceServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modifywordcount/WordCount.java" afterPath="$PROJECT_DIR$/src/modifywordcount/WordCount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountClient.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountClientActor.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountMapActor.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountMapActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountReduceActor.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountReduceActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountServer.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hadoopwc/WordCountServerActor.java" afterPath="$PROJECT_DIR$/src/hadoopwc/WordCountServerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bea9fdf1-e297-4eb3-9e33-2396f01f569d" name="Default" comment="" />
     <ignored path="BigAkka.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />

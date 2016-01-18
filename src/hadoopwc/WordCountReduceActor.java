@@ -66,7 +66,7 @@ public class WordCountReduceActor extends UntypedActor {
       Iterator<MapReduceInfoCollect> infoiter = info.iterator();
       while (infoiter.hasNext()) {
         MapReduceInfoCollect mri = infoiter.next();
-        actor.tell(mri);
+        actor.tell(mri, self());
         System.out.println("++++++ reduce done " + mri);
       }
     } else

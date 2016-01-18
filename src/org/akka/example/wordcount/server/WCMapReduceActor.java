@@ -14,7 +14,7 @@ public class WCMapReduceActor extends UntypedActor {
         System.out.println("==Got Display Message " + message);
 				aggregateActor.tell(message, getSender());
 			} else {
-				mapRouter.tell(message);
+				mapRouter.tell(message, self());
         System.out.println("==other message " + message);
 			}
 		}

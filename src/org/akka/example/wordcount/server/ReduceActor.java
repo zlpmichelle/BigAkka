@@ -29,7 +29,7 @@ public class ReduceActor extends UntypedActor {
 			NavigableMap<String, Integer> reducedList = reduce(work);
 
 			// reply with the result
-			actor.tell(reducedList);
+			actor.tell(reducedList, self());
       // log.info("***********I'm in Reduce Actor on Receive, message: "
       // + message.toString() + "*******\n");
       // actor.tell("*********I'm in Reduicer Actor on Receive \n");

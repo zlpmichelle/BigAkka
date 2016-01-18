@@ -101,7 +101,7 @@ public class MapActor extends UntypedActor {
 			List<Result> list = evaluateExpression(work);
 
 			// reply with the result
-			actor.tell(list);
+			actor.tell(list, self());
       // actor.tell("*********I'm in Mapper Actor on Receive \n");
       // log.info("***********I'm in Mapper Actor on Receive, message: "
       // + message.toString() + "*******\n");

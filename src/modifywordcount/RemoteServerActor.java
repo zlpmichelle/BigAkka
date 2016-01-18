@@ -12,10 +12,10 @@ public class RemoteServerActor extends UntypedActor {
   public void onReceive(Object message) throws Exception {
     if (message instanceof String) {
       if (((String) message).compareTo("Display") == 0) {
-        this.getSender().tell(message);
+        this.getSender().tell(message, self());
         System.out.println("===Got Display Message : " + message);
       } else {
-        this.getSender().tell(message);
+        this.getSender().tell(message, self());
         System.out.println("==Other Display Message From Client Actor : "
             + message);
       }

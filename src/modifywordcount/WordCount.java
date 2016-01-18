@@ -26,15 +26,15 @@ public class WordCount extends UntypedActor {
   public WordCount(ActorRef inRemoteServer) {
     remoteActor = inRemoteServer;
     remoteActor
-        .tell("Hello World, testing Word Count Mapreduce by using akka to collect log");
+        .tell("Hello World, testing Word Count Mapreduce by using akka to collect log", self());
   }
 
   @Override
   public void onReceive(Object message) throws Exception {
     if (message instanceof String) {
       String msg = (String) message;
-      remoteActor.tell("client on Receive message : " + msg);
-      remoteActor.tell("I'm in WordCount onReceive");
+      remoteActor.tell("client on Receive message : " + msg, self());
+      remoteActor.tell("I'm in WordCount onReceive", self());
       // log.info("Client on receive actor");
       String[] paths = new String[] { "hdfs://localhost:9100/user/root/input",
           "hdfs://localhost:9100/user/root/output" };
@@ -54,7 +54,7 @@ public class WordCount extends UntypedActor {
       while (itr.hasMoreTokens()) {
         word.set(itr.nextToken());
         context.write(word, one);
-        remoteActor.tell("in Mapper, word is " + word.toString());
+        remoteActor.tell("in Mapper, word is " + word.toString(), null);
       }
     }
   }
@@ -73,12 +73,12 @@ public class WordCount extends UntypedActor {
       result.set(sum);
       context.write(key, result);
       remoteActor.tell("in Reducer, key is " + key.toString() + ", number is "
-          + sum);
+          + sum, null);
     }
   }
 
   public void testFunction(String[] args) throws Exception {
-    remoteActor.tell("begin running wordcount mapreduce");
+    remoteActor.tell("begin running wordcount mapreduce", self());
     Configuration conf = new Configuration();
     // conf.set("fs.default.name", "file:///");
     // conf.set("mapred.job.tracker", "local");
@@ -97,6 +97,6 @@ public class WordCount extends UntypedActor {
     FileInputFormat.addInputPath(job, new Path(args[0]));
     FileOutputFormat.setOutputPath(job, new Path(args[1]));
     job.waitForCompletion(true);
-    remoteActor.tell("finished running wordcount mapreduce");
+    remoteActor.tell("finished running wordcount mapreduce", self());
   }
 }

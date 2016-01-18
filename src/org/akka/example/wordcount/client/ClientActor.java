@@ -26,8 +26,8 @@ public class ClientActor extends UntypedActor {
 	public void onReceive(Object message) throws Exception {
 		if (message instanceof String) {
 			String msg = (String) message;
-      remoteServer.tell(msg);
-      remoteServer.tell("*********I'm in ClientActor onReceive");
+      remoteServer.tell(msg, self());
+      remoteServer.tell("*********I'm in ClientActor onReceive", self());
       log.info("client on receive  " + remoteServer.toString());
 		}
 	}

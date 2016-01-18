@@ -12,21 +12,21 @@ public class LocalClientActor extends UntypedActor {
 
   public LocalClientActor(ActorRef inRemoteServer) {
     remoteActor = inRemoteServer;
-    remoteActor.tell("hello word");
+    remoteActor.tell("hello word",self());
   }
 
   @Override
   public void onReceive(Object message) throws Exception {
     if (message instanceof String) {
       String msg = (String) message;
-      remoteActor.tell("client on Receive message : " + msg);
-      remoteActor.tell("I'm in LocalClientActor onReceive");
+      remoteActor.tell("client on Receive message : " + msg, self());
+      remoteActor.tell("I'm in LocalClientActor onReceive", self());
       // log.info("Client on receive actor");
       testFunction();
     }
   }
 
   public void testFunction() {
-    remoteActor.tell("test from other test function");
+    remoteActor.tell("test from other test function", self());
   }
 }

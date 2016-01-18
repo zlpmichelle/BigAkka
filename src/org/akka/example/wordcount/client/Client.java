@@ -37,7 +37,7 @@ public class Client implements Bootable {
 
 		fileReadActor.tell(fileName,actor);
 
-		remoteActor.tell("DISPLAY_LIST");
+		remoteActor.tell("DISPLAY_LIST", null);
 
 		system.shutdown();
 

@@ -45,7 +45,7 @@ public class WordCountMapActor extends UntypedActor {
       List<MiddleResult> list = map(work);
 
       // reply with the result
-      actor.tell(list);
+      actor.tell(list, self());
       log.info("=====print log info on server port");
     } else
       throw new IllegalArgumentException("Unknown message [" + message + "]");

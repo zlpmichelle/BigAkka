@@ -14,7 +14,7 @@ public class WordCountServerActor extends UntypedActor {
         System.out.println("Got Display Message");
         aggregateActor.tell(message, getSender());
       } else {
-        mapRouter.tell(message);
+        mapRouter.tell(message,self());
       }
     }
   }

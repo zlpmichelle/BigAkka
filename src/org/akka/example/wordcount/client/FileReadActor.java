@@ -27,11 +27,11 @@ public class FileReadActor extends UntypedActor {
 				String line = null;
 				while ((line = reader.readLine()) != null) {
 					//System.out.println("File contents->" + line);
-					getSender().tell(line);
+					getSender().tell(line, self());
 				}
 				System.out.println("All lines send !");
 				// send the EOF message..
-				getSender().tell(String.valueOf("EOF"));
+				getSender().tell(String.valueOf("EOF"), self());
 			} catch (IOException x) {
 				System.err.format("IOException: %s%n", x);
 			}

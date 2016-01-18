@@ -6,6 +6,7 @@ import akka.actor.PoisonPill;
 import akka.actor.Props;
 import akka.actor.UntypedActor;
 import akka.actor.UntypedActorFactory;
+import akka.dispatch.Envelope;
 import akka.dispatch.PriorityGenerator;
 import akka.dispatch.UnboundedPriorityMailbox;
 import akka.kernel.Bootable;
@@ -13,6 +14,8 @@ import akka.routing.RoundRobinRouter;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+
+import java.util.Comparator;
 
 public class WordCountServer implements Bootable {
   private ActorRef mapRouter;
@@ -101,6 +104,15 @@ public class WordCountServer implements Bootable {
       });
     }
 
+    @Override
+    public int initialCapacity() {
+      return 0;
+    }
+
+    @Override
+    public Comparator<Envelope> cmp() {
+      return null;
+    }
   }
 
 }

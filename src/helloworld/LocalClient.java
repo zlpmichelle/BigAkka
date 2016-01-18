@@ -24,16 +24,16 @@ public class LocalClient implements Bootable {
         return new LocalClientActor(remoteActor);
       }
     }));
-    remoteActor.tell("Display");
-    actor.tell("zhangliping");
+    remoteActor.tell("Display", null);
+    actor.tell("zhangliping", null);
     system.shutdown();
   }
 
-  @Override
+
   public void shutdown() {
   }
 
-  @Override
+
   public void startup() {
   }
 

@@ -22,7 +22,7 @@ public class WordCountClientActor extends UntypedActor {
   public void onReceive(Object message) throws Exception {
     if (message instanceof String) {
       String msg = (String) message;
-      remoteServer.tell(msg);
+      remoteServer.tell(msg, self());
     }
   }
 

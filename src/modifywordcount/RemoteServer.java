@@ -30,12 +30,12 @@ public class RemoteServer implements Bootable {
     new RemoteServer();
   }
 
-  @Override
+
   public void shutdown() {
     // system.shutdown();
   }
 
-  @Override
+
   public void startup() {
     // system.actorOf(new Props(RemoteServerActor.class), "remoteServerActor");
   }
